@@ -26,13 +26,13 @@ export default {
   module: {
     rules: [
         {
-          test: /\.js$/, 
+          test: /\.js?$/, 
           include: path.join(__dirname, 'src'), 
-          loaders: ['babel']
+          loader: ['babel-loader']
         },
         {
-            test: /(\.css)$/, 
-            loaders: ['style', 'css']
+            test: /\.css?$/, 
+            loader: ['style-loader', 'css-loader']
         },
         {
             test: /\.eot(\?v=\d+\.\d+\.\d+)?$/, 
