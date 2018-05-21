@@ -7,7 +7,7 @@ class About extends React.Component{
             <div className="jumbotron">
                 <h1>Weather Application</h1>
                 <p>Allows you to view the weather forecast report for 3 days anywhere in the world.</p>
-                <Link to="home">Go to home</Link>
+                <Link to="/">Go to home</Link>
             </div>
         );
     }
